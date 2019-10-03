@@ -1,0 +1,43 @@
+###Database_Music
+
+CREATE TABLE billboard_rankings (
+# numerical id
+# title
+# artist
+# album
+# billboard year
+# billboard rank
+# weeks on top 100
+# start date top 100
+# end date top 100
+
+ CREATE TABLE songQualities (
+# title
+# artist # maybe instead of title and artist, a song_id that references billboard_rankings table
+# BPM
+# length
+# tonality
+# energy
+# danceability
+# happiness
+# loudness
+# acousticness
+# instrumentalness
+# liveness
+# speechiness
+
+CREATE TABLE artists (
+# artist_name
+# artist_genre
+# number of songs on hot100
+
+CREATE TABLE songs (
+# artist
+# album
+# track
+
+CREATE TABLE albums (
+# album name
+# artist
+# year
+### genre (probably wont have genre info for artist or album)
