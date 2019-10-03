@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BillBored</title>
+        <link rel="stylesheet" type="text/css" href="static/music_quiz.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script type='text/javascript'>
+            window.onload = function() {
+                document.getElementById('btn_q_launcher').onclick = function () {
+                    location.href = "q_page.html";
+                };
+            };
+        </script>
+    </head>
+        <body>
+
+            <div action='http://127.0.0.1:5000/' method='POST'>
+                <div class='main'>
+                    <p>Welcome to BillBored!</p>
+                    <p>Want to kill some time?</p>
+                </div>
+                
+                <div>
+                    <button id='btn_q_launcher'>Begin!</button>
+                </div> 
+            </div>
+
+        </body>
+</html>

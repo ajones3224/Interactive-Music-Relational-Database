@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BillBored</title>
+        <link rel="stylesheet" type="text/css" href="static/music_quiz.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script type='text/javascript'>
+            window.onload = function() {
+                document.getElementById('btn_q_launcher').onclick = function () {
+                    location.href = "q_page.html";
+                };
+                document.getElementById('btn_home').onclick = function() {
+                    location.href = '/billbored/';
+                }
+                document.getElementById('score').innerHTML = localStorage.getItem('amt_correct');
+                document.getElementById('time').innerHTML = localStorage.getItem('time');
+            };
+        </script>
+    </head>
+        <body>
+            <img src='static/home.png' class='main' id='btn_home'>
+                <div class='main' action='http://127.0.0.1:5000/end_page.html'>
+                    <p>Congratulations! You scored:</p>
+                    <p><span id='score'></span> out of {{ quiz_length }}</p>
+                    <p>in</p>
+                    <p id='time'></p>
+                </div> 
+    
+                <div>
+                    <button id='btn_q_launcher'>Play Again</button>
+                </div> 
+        </body>
+</html>

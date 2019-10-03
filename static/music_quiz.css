@@ -1,0 +1,93 @@
+
+.q_area {
+    margin: 0 32%;
+    width: 30em;
+    height: 90%;
+}
+
+.q_box, button {
+    border-radius: 10px;
+    border: 1px solid rgba(183, 218, 254, 1);
+    font-family: 'Roboto';
+    text-align: center;
+    transition: background-color 0.5s ease;
+}
+
+#btn_home {
+    margin: 0 auto;
+    width: 10%;
+}
+
+.choice {
+    margin-top: 2em;
+    height: 4em;
+}
+
+.q_box {
+    height: 4em;
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgba(3, 133, 253, 1);
+    color: rgba(229, 240, 252, 1);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    word-wrap: break-word;
+    box-shadow: -14px 14px 0px 0px rgba(144, 176, 210, 0.63);
+}
+
+.letter, .main {
+    width: 20%;
+    color: rgba(255, 255, 255, 1);
+    font-size: 3em;
+    font-family: 'Roboto';
+    text-shadow: -3px 3px rgba(144, 176, 210, 0.63);
+}
+
+.letter {
+    margin: 0px 0;
+    float: left;
+    text-align: left;
+}
+
+.main, #timer {
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(144, 176, 210, 0.43);
+}
+
+#timer {
+    float: right;
+    margin: 0 30%;
+
+}
+
+.main {
+    margin: 2% 35%;
+    width: 30%;
+}
+
+.btn_choice, #btn_q_launcher {
+    background-color: rgba(230, 241, 252, 1);
+    text-align: center;
+    color: rgba(25, 137, 250, 1);
+    font-size: 1.5em;
+}
+
+#btn_q_launcher {
+    margin: 0 40%;
+    width: 20%;
+}
+
+.btn_choice {
+    float: right;
+    width: 80%;
+    height: 90%;
+}
+
+#btn_q_launcher:hover {
+    background-color: rgba(200, 211, 232, 1);
+}
+
+body {
+    background-image: url('icon_bg.png');
+}

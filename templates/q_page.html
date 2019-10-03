@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BillBored</title>
+        <link rel="stylesheet" type="text/css" href="static/music_quiz.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src='static/question_handler.js'></script>
+        <script>
+            init({{ result | safe }});
+        </script>
+    </head>
+        <body>
+
+            <img src='static/home.png' class='main' id='btn_home'>
+
+
+            <p class='letter' id='timer'></p>
+
+
+            <div class='q_area' action='http://127.0.0.1:5000/q_page.html'>
+
+                <div class='q_box' id='question'></div>
+
+                <div class='choice'>
+                    <p class='letter'><b>A</b></p>
+                    <button class='btn_choice' id='a'
+                    onclick="changeChoiceColor('a')"
+                    onmouseover="hoverColor('a')"
+                    onmouseout="removeHoverColor('a')"></button>
+                </div>
+
+                <div class='choice'>
+                    <p class='letter'><b>B</b></p>
+                    <button class='btn_choice' id='b'
+                    onclick="changeChoiceColor('b')"
+                    onmouseover="hoverColor('b')"
+                    onmouseout="removeHoverColor('b')"></button>
+                </div>
+
+                <div class='choice'>
+                     <p class='letter'><b>C</b></p>
+                    <button class='btn_choice' id='c'
+                    onclick="changeChoiceColor('c')"
+                    onmouseover="hoverColor('c')"
+                    onmouseout="removeHoverColor('c')"></button>
+                </div>
+
+                <div class='choice'>
+                    <p class='letter'><b>D</b></p>
+                    <button class='btn_choice' id='d'
+                    onclick="changeChoiceColor('d')"
+                    onmouseover="hoverColor('d')"
+                    onmouseout="removeHoverColor('d')"></button>
+                </div> 
+            </div>
+        </body>
+</html>
